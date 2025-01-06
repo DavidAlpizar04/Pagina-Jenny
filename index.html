@@ -3,224 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portafolio</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Where is Jenny?</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body class="body">
     <header class="header">
-        <a href="#" class="logo">David Alpizar</a>
-        <i id="menu-icon" class="fa-solid fa-bars"></i>
+        <a href="#" class="logo">Where is Jenny?</a>
         <nav class="navbar">
             <ul>
-                <li><a href="#home" class="active"></a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Donate">Donate</a></li>
+                <li><a href="#Experience">Experience</a></li>
             </ul>
+            
         </nav>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/@whereisjennyg?" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/jennygunneng/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:whereisjennyg@gmail.com" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
+            <label class="switch">
+                <input type="checkbox">
+                <span id="mode-toggle" class="mode-toggle"></span>
+            </label>
+        </div>
     </header>
-
-
+    <audio id="bounce-sound" src="sounds/bounce-sound.mp3" preload="auto"></audio>
     <main id="hero">
-    
-    
-    <section class="home" id="home">
-        <div id="particles-js"></div>
-        <div class="content">
-            <h1>Hi, <br/> I'm David</h1>
-            <h3>I'm a <span class="typing-text"></span></h3>
-            <a href="#" class="btn"><span>Hire Me</span>
-                <i class="fa-regular fa-circle-down"></i>
-            </a>
-        </div>
-        <div class="socials">
-            <div class="social-icon">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </div>
-        <div class="image">
-            <img src="/image/Profile-1.jpg" alt="" class="tilt">
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="/image/Profile-2.png" alt="">
-        </div>
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Software Developer</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis amet voluptatem, necessitatibus cum dolore voluptates tenetur molestiae deserunt similique molestias. <omnis class="lorem10"></omnis></p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
-    <section class="skills skills" id="skills">
-        <h2 class="heading">Skill & <span>Abilities</span></h2>
-        <div class="container">
-            <div class="row" id="skillsContainer">
-                <div class="bar">
-                    <div class="info">
-                        <img class="img-info" src="/image/icons8-css3-480.png" />
-                        <span>CSS</span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="info">
-                        <img class="img-info" src="/image/icons8-html-5-240.png" />
-                        <span>HTML</span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <div class="info">
-                        <img class="img-info" src="/image/icons8-javascript-420.png" />
-                        <span>JAVA SCRIPT</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="education" id="education">
-        <h2 class="heading">My <span>Education</span></h2>
-        <p class="quote">Education is not the learning of facts, but the training of the mind to think.</p>
-
-        <div class="education-container" data-url="https://www.freecodecamp.org/certification/David_Alpizar/responsive-web-design">
-            <div class="education-box">
-                <img src="/image/Freecodecamp.png" class="img-education" alt="">
-            </div>
-            <div class="education-content">
-                <h3>Responsive Web Design</h3>
-                <p>freeCodeCamp</p>
-                <h4>2024 | Complete</h4>
-            </div>
-        </div>
-
-        <div class="education-container" data-url="https://coursera.org/share/3e48fefdb04adfce6f3c0f33706777f8">
-            <div class="education-box">
-                <img src="/image/meta-logo.png" class="img-education" alt="">
-            </div>
-            <div class="education-content">
-                <h3>Programming with JavaScript</h3>
-                <p>Coursera | Meta</p>
-                <h4>2024 | Complete</h4>
-            </div>
-        </div>
-    </section>
-    <section class="experience" id="experience">
-        <h2 class="heading"><i class="fas fa-briefcase"></i>Experience</h2>
-        <div class="timeLine">
-            <div class="container right">
-                <div class="content">
-                    <div class="tag">
-                        <h2>Self Employed</h2>
-                    </div>
-                    <div class="decs">
-                        <h3>Full Stack Developer</h3>
-                        <p>Jan 22 - Present</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container left">
-                <div class="content">
-                    <div class="tag">
-                        <h2>Self Employed 2 </h2>
-                    </div>
-                    <div class="decs">
-                        <h3>Full Stack Developer</h3>
-                        <p>Jan 22 - Present</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <div class="tag">
-                        <h2>Self Employed 3</h2>
-                    </div>
-                    <div class="decs">
-                        <h3>Full Stack Developer</h3>
-                        <p>Jan 22 - Present</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container left">
-                <div class="content">
-                    <div class="tag">
-                        <h2>Self Employed 4</h2>
-                    </div>
-                    <div class="decs">
-                        <h3>Full Stack Developer</h3>
-                        <p>Jan 22 - Present</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container right">
-                <div class="content">
-                    <div class="tag">
-                        <h2>Self Employed 5</h2>
-                    </div>
-                    <div class="decs">
-                        <h3>Full Stack Developer</h3>
-                        <p>Jan 22 - Present</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2 class="heading"><i class="fas fa-heading"></i>Get in <span>Touch</span></h2>
-
-        <div class="container">
+        <section class="home" id="home">
             <div class="content">
-                <div class="image-box">
-                    <img class="img-contact" src="/image/Memoji-1.png" alt="">
-                </div>
-                <form id="contact-form">
-
-                    <div class="form-group">
-                        <div class="field">
-                            <input type="text" name="name" placeholder="Name" required>
-                            <i class='fas fa-user'></i>
-                        </div>
-                        <div class="field">
-                            <input type="text" name="email" placeholder="Email" required>
-                            <i class='fas fa-envelope'></i>
-                        </div>
-                        <div class="field">
-                            <input type="text" name="phone" placeholder="Phone" required>
-                            <i class='fas fa-phone-alt'></i>
-                        </div>
-                        <div class="message">
-                            <textarea placeholder="Message" name="message" id="message" required></textarea>
-                            <i class='fas fa-comment-dots'></i>
-                        </div>
-
-                    </div>
-                    <div class="button-area">
-                        <button type="submit" class="btn">
-                            Submit <i class="fa fa-paper-plane"></i>
-                        </button>
-                    </div>
-                </form>
+                <h1><span>Where is Jenny?</span></h1>
+                <a href="#About" class="btn" id="btn-home">About me</a>
             </div>
-        </div>
-    </section>
-</main>
-
-<script src="./js/particles.min.js"></script>
-<script src="./js/app.js"></script>
-<script src="/js/script.js"></script>
-
-<video muted autoplay loop class="video-bg">
-    <source src="/videos/43661-436237700.mp4" type="video/mp4">
-</video>
-<div class="capa"></div>
+        </section>
+        <section class="About" id="About">
+            <div class="content">
+                <h2>About me</h2>
+                <p class="txt-about">
+                    I’m a full-time traveler, student and content creator driven by a love for discovery and connection. For me, travel isn’t just about visiting new places – it's about pushing personal boundaries, establishing worldwide friendships and finding beauty in the unexpected. <br></br>
+At 17, I moved from Norway to Costa Rica as the first step toward realizing my dream of traveling the world. Since then, I’ve studied abroad in Spain and Vietnam, volunteered on various continents and I’ve explored countless countries, embracing the beauty of diverse landscapes, cultures and people. Travel has shaped every part of my life, blending into both my personal and academic experiences. Now, I share my adventures as a content creator, focusing on budget travel and volunteering abroad, which promote sustainable, meaningful travel and giving back while exploring new destinations. <br></br>
+Travel lets me embrace a spontaneous, carefree lifestyle where every day brings something new. I thrive on adventure, often packing my bags on a whim to discover hidden gems. Whether it’s hitchhiking my way through Nicaragua, a road trip with strangers in the Italian Alps or teaching children at a Buddhist temple in Sri Lanka, I’m up for anything. Let’s travel the world together!
+                </p>
+                <a href="#Contact" class="btn" id="btn-about">Contact me!</a>
+            </div>
+        </section>
+        <section class="Contact" id="Contact">
+            <div class="image-container">
+                <img src="/Images/ct-1.jpg" alt="Imagen 1" class="contact-image">
+                <img src="/Images/ct-2.jpg" alt="Imagen 2" class="contact-image">
+                <img src="/Images/ct-3.jpg" alt="Imagen 3" class="contact-image">
+            </div>
+            <div class="txt-contact">
+                <h2>Looking Forward to Hearing From You!</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ex optio mollitia unde vel voluptatum ratione est tenetur architecto earum.</h4>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <form id="contact-form" action="https://formsubmit.co/whereisjennyg@gmail.com" method="POST">
+                        <div class="form-group">
+                            <div class="field">
+                                <input type="text" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="field">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="field full-width">
+                                <input type="text" name="subject" placeholder="Subject" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="message">
+                                <textarea placeholder="Message" name="message" id="message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit" class="btn" >
+                                Submit
+                            </button>
+                            <input type="hidden" name="_next" value="txt.html">
+                            <input type="hidden" name="_captcha" value="false">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="Donate" id="Donate">
+            <div class="donation-container">
+                <h2>Support my travels!</h2>
+                <p>I'm extremely grateful for any fundings that would enable me to travel further and produce more content!</p>
+                <form action="https://www.paypal.com/donate" method="post" target="_top" class="donate-btn">
+                    <input type="hidden" name="hosted_button_id" value="Z9U7MGPAY56NW" />
+                    <input type="image" src="https://pics.paypal.com/00/s/OGQ2MDRkMmUtMTcwZi00ODUwLWIyM2EtYzk0MDNhNzNhODJi/file.JPG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_NO/i/scr/pixel.gif" width="1" height="1"/>
+                    </form>
+            </div>
+        </section>
+        <section class="Experience" id="Experience">
+            <h2 class="experience-title">Experience</h2>
+            <p class="experience-txt">I've collaborated with and created content for various organizations, including: </p>
+            <div class="experience-container">
+                <div class="experience-card">
+                    <h3>Worldpackers </h3>
+                    <p>Apr 2024 - present</p>
+                </div>
+                <div class="experience-card">
+                    <h3>STS Education</h3>
+                    <p>Oct 2023 - present
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <h3>Kulturstudier</h3>
+                    <p>Oct 2024 - Dec 2024</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <ul class="social-links">
+                    <li><a href="https://www.tiktok.com/@whereisjennyg?" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="https://www.instagram.com/jennygunneng/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="mailto:whereisjennyg@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+                <p>&copy; 2024 Where is Jenny? All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <input type="hidden" name="_next" value="txt.html">
+    <input type="hidden" name="_captcha" value="false">
+    <script src="/Js/script.js"></script>
 </body>
 </html>
